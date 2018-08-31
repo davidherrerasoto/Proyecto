@@ -1,0 +1,376 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C1E9276E-9717-4571-9A0F-673E63F00E9F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WindowsFormsApplication1</RootNamespace>
+    <AssemblyName>WindowsFormsApplication1</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publicar\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Hopstarter-Orb-Download.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Desharp, Version=1.2.9.0, Culture=neutral, PublicKeyToken=cd60d985c52bcd6f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Desharp.1.2.9\lib\net40\Desharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Agente.cs" />
+    <Compile Include="AgregarAgente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarAgente.Designer.cs">
+      <DependentUpon>AgregarAgente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarCita.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarCita.Designer.cs">
+      <DependentUpon>AgregarCita.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarCliente.Designer.cs">
+      <DependentUpon>AgregarCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarCompra.Designer.cs">
+      <DependentUpon>AgregarCompra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarListaPreciosEstilista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarListaPreciosEstilista.Designer.cs">
+      <DependentUpon>AgregarListaPreciosEstilista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarProducto.Designer.cs">
+      <DependentUpon>AgregarProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarProveedor.Designer.cs">
+      <DependentUpon>AgregarProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarServicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarServicio.Designer.cs">
+      <DependentUpon>AgregarServicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseDatosDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BaseDatosDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Citas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Citas.Designer.cs">
+      <DependentUpon>Citas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cliente.cs" />
+    <Compile Include="Cobrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cobrar.Designer.cs">
+      <DependentUpon>Cobrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ComboBoxItem.cs" />
+    <Compile Include="CTiempo.cs" />
+    <Compile Include="Documento.cs" />
+    <Compile Include="EntradaInventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EntradaInventario.Designer.cs">
+      <DependentUpon>EntradaInventario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Existencia.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FuncionesBaseDatos.cs" />
+    <Compile Include="GVAgente.cs" />
+    <Compile Include="GVCliente.cs" />
+    <Compile Include="GVCProductos.cs" />
+    <Compile Include="GVProducto.cs" />
+    <Compile Include="GVProductoCompra.cs" />
+    <Compile Include="GVProductoVenta.cs" />
+    <Compile Include="GVProveedor.cs" />
+    <Compile Include="GVServicio.cs" />
+    <Compile Include="ListaPrecio.cs" />
+    <Compile Include="Movimiento.cs" />
+    <Compile Include="Movimientos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimientos.Designer.cs">
+      <DependentUpon>Movimientos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PBarForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PBarForm.Designer.cs">
+      <DependentUpon>PBarForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PHTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Precio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Precio.Designer.cs">
+      <DependentUpon>Precio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Producto.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="ProgressBarClase.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Proveedor.cs" />
+    <Compile Include="ResultadoJson.cs" />
+    <Compile Include="SalidaInventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalidaInventario.Designer.cs">
+      <DependentUpon>SalidaInventario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Seleccionar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Seleccionar.Designer.cs">
+      <DependentUpon>Seleccionar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Servicio.cs" />
+    <Compile Include="StaticsFunctions.cs" />
+    <Compile Include="Tiempo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tiempo.Designer.cs">
+      <DependentUpon>Tiempo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TomarClientes.cs" />
+    <Compile Include="TomarAgentes.cs" />
+    <Compile Include="TomarExistencias.cs" />
+    <Compile Include="TomarListaPrecio.cs" />
+    <Compile Include="TomarProductos.cs" />
+    <Compile Include="TomarProveedores.cs" />
+    <Compile Include="TomarServicios.cs" />
+    <Compile Include="TomarTiempos.cs" />
+    <Compile Include="TomarUnidadMedidas.cs" />
+    <Compile Include="Unidades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Unidades.Designer.cs">
+      <DependentUpon>Unidades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UnidadMedida.cs" />
+    <Compile Include="Ventas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventas.Designer.cs">
+      <DependentUpon>Ventas.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AgregarAgente.resx">
+      <DependentUpon>AgregarAgente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgregarCita.resx">
+      <DependentUpon>AgregarCita.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgregarCliente.resx">
+      <DependentUpon>AgregarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgregarCompra.resx">
+      <DependentUpon>AgregarCompra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgregarListaPreciosEstilista.resx">
+      <DependentUpon>AgregarListaPreciosEstilista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgregarProducto.resx">
+      <DependentUpon>AgregarProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgregarProveedor.resx">
+      <DependentUpon>AgregarProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgregarServicio.resx">
+      <DependentUpon>AgregarServicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Citas.resx">
+      <DependentUpon>Citas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cobrar.resx">
+      <DependentUpon>Cobrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EntradaInventario.resx">
+      <DependentUpon>EntradaInventario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimientos.resx">
+      <DependentUpon>Movimientos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PBarForm.resx">
+      <DependentUpon>PBarForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Precio.resx">
+      <DependentUpon>Precio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="SalidaInventario.resx">
+      <DependentUpon>SalidaInventario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seleccionar.resx">
+      <DependentUpon>Seleccionar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tiempo.resx">
+      <DependentUpon>Tiempo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Unidades.resx">
+      <DependentUpon>Unidades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventas.resx">
+      <DependentUpon>Ventas.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="BaseDatosDataSet.xsc">
+      <DependentUpon>BaseDatosDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BaseDatosDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BaseDatosDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BaseDatosDataSet.xss">
+      <DependentUpon>BaseDatosDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Desharp.config.example" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BaseDatos.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="BaseDatos_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>BaseDatos.mdf</DependentUpon>
+    </Content>
+    <Content Include="Hopstarter-Orb-Download.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
